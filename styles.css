@@ -92,14 +92,11 @@ a{ color:inherit; text-decoration:none; }
 .nav a:focus-visible{ outline:2px solid var(--accent-1); outline-offset:4px; border-radius:2px; }
 
 .nav-cta{
-  border:1px solid var(--line);
-  padding:9px 18px;
-  border-radius:2px;
   font-size:14px;
   font-weight:500;
-  color:var(--paper) !important;
+  color:var(--muted) !important;
 }
-.nav-cta:hover{ border-color:var(--accent-1); }
+.nav-cta:hover{ color:var(--paper) !important; }
 
 .nav-toggle{ display:none; }
 
@@ -336,13 +333,14 @@ section.block.light .grid-3 .cell p{ color:var(--muted-dark); }
 .page-hero p{ color:var(--muted); max-width:56ch; margin:0; }
 .page-body{ padding:64px 0 96px; }
 .placeholder-box{
-  border:1px dashed var(--line-soft);
+  border:1px dashed var(--line);
   border-radius:4px;
-  padding:48px 32px;
-  color:var(--muted-dark);
+  padding:24px 28px;
+  color:var(--muted);
   font-size:14.5px;
 }
-section.block.light .placeholder-box{ border-color:var(--line-soft); }
+section.block.light .placeholder-box,
+body.on-paper .placeholder-box{ border-color:var(--line-soft); color:var(--muted-dark); }
 body.on-paper{ background:var(--paper); color:var(--ink); }
 body.on-paper .placeholder-box{ background:#fff; }
 
@@ -479,3 +477,34 @@ section.block.light .bp-row p{ color:var(--muted-dark); }
   font-size:13px; color:var(--muted-dark); background:#F1EFE9;
   border:1px solid var(--line-soft); border-radius:4px; padding:14px 18px; margin:0 0 32px;
 }
+
+/* ---------- Bau/Industrie-Akzent: Hazard-Stripe-Leiste -------------------- */
+.hazard-bar{
+  height:8px;
+  background:repeating-linear-gradient(
+    -45deg,
+    var(--accent-1) 0 18px,
+    var(--ink) 18px 36px
+  );
+}
+section.block.light + .hazard-bar,
+.hazard-bar.on-light{
+  background:repeating-linear-gradient(
+    -45deg,
+    var(--accent-1) 0 18px,
+    var(--paper) 18px 36px
+  );
+}
+
+/* ---------- Kleines Haltungs-Zitat (dezent, z.B. neben Team) -------------- */
+.quote-small{
+  border-left:3px solid var(--accent-1);
+  padding-left:20px;
+  max-width:48ch;
+  font-size:14.5px;
+  line-height:1.65;
+  color:var(--muted-dark);
+  font-style:italic;
+  margin:28px 0 0;
+}
+section:not(.light) .quote-small{ color:var(--muted); }
