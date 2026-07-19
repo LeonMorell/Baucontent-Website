@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — BAUCONTENT</title>
+<meta name="description" content="Kontaktieren Sie BAUCONTENT — Marketing-Agentur für die Bau- und Industriebranche.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="BAUCONTENT — Startseite">
+      <img src="assets/logo-white.png" alt="BAUCONTENT Logo">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="interviews.html">Interviews</a>
+      <a href="kontakt.html" class="nav-cta">Kontakt</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Sprechen wir über Ihr Projekt.</h1>
+    <p>Platzhaltertext — hier eure Kontaktdaten (Adresse, Telefon, E-Mail) ergänzen.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="wrap">
+    <div class="placeholder-box" style="margin-bottom:40px;">
+      Kontaktformular — Funktionalität (Versand) muss noch angebunden werden.
+    </div>
+    <form>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
+        <div>
+          <label for="name" style="display:block;font-size:13px;margin-bottom:6px;color:var(--muted);">Name</label>
+          <input id="name" type="text" style="width:100%;background:transparent;border:1px solid var(--line);color:var(--paper);padding:12px;border-radius:2px;">
+        </div>
+        <div>
+          <label for="email" style="display:block;font-size:13px;margin-bottom:6px;color:var(--muted);">E-Mail</label>
+          <input id="email" type="email" style="width:100%;background:transparent;border:1px solid var(--line);color:var(--paper);padding:12px;border-radius:2px;">
+        </div>
+      </div>
+      <div style="margin-bottom:24px;">
+        <label for="message" style="display:block;font-size:13px;margin-bottom:6px;color:var(--muted);">Nachricht</label>
+        <textarea id="message" rows="5" style="width:100%;background:transparent;border:1px solid var(--line);color:var(--paper);padding:12px;border-radius:2px;"></textarea>
+      </div>
+      <button type="submit" class="btn" style="border:none;cursor:pointer;">Nachricht senden</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo-dark-full.png" alt="BAUCONTENT Logo">
+      <p>Marketing-Agentur für die Bau- und Industriebranche.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="richtlinien.html">Richtlinien</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2025–2026 BAUCONTENT. Alle Rechte vorbehalten.</span>
+    <span class="legal">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="richtlinien.html">Richtlinien</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
