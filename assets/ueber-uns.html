@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Über uns — BAUCONTENT</title>
+<meta name="description" content="Über BAUCONTENT — Fachplattform für Bau und Industrie: Team, Haltung und Arbeitsweise.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="BAUCONTENT — Startseite">
+      <img src="assets/logo-white.png" alt="BAUCONTENT Logo">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-uns.html" class="active">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="best-practice.html">Best Practice</a>
+      <a href="interviews.html">Interviews</a>
+      <a href="kontakt.html" class="nav-cta">Kontakt</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="hazard-bar"></div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Über uns</p>
+    <h1>Über uns</h1>
+    <p>Kein anonymes Agentur-Team — die Menschen hinter BAUCONTENT und die Haltung, aus der wir arbeiten.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="wrap">
+    <div class="feature-photo" style="margin-bottom:64px;">
+      <img src="assets/team/stephane-itasse.png" alt="Stéphane Itasse vor Ort bei einem Bauprojekt">
+      <div>
+        <p class="cap-eyebrow">Unser Ansatz</p>
+        <h3>Fachwissen aus erster Hand</h3>
+        <p>Wir kommen aus dem Journalismus und der Technik — nicht aus dem Marketing-Baukasten.
+        Das heißt: Wir stellen Fragen, bevor wir formulieren, und verstehen ein Bauprojekt oder
+        eine Maschine, bevor wir darüber schreiben.</p>
+      </div>
+    </div>
+
+    <h2 style="font-family:'Archivo',sans-serif; font-weight:700; font-size:26px; margin:0 0 28px;">Das Team</h2>
+    <div class="team-grid" style="margin-bottom:8px;">
+      <div class="team-card">
+        <div class="photo"><img src="assets/team/leon-morell.png" alt="Leon Morell, CEO & Founder von BAUCONTENT"></div>
+        <div class="info">
+          <div class="name">Leon Morell</div>
+          <div class="role">CEO &amp; Founder</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="photo"><img src="assets/team/julia-appelmann.png" alt="Julia Appelmann, Head of Editorial bei BAUCONTENT"></div>
+        <div class="info">
+          <div class="name">Julia Appelmann</div>
+          <div class="role">Head of Editorial</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="photo"><img src="assets/team/stephane-itasse.png" alt="Stéphane Itasse, Fachjournalist bei BAUCONTENT"></div>
+        <div class="info">
+          <div class="name">Stéphane Itasse</div>
+          <div class="role">Fachjournalist</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="photo"><img src="assets/team/christian-brem.png" alt="Christian Brem, Technischer Moderator bei BAUCONTENT"></div>
+        <div class="info">
+          <div class="name">Christian Brem</div>
+          <div class="role">Technischer Moderator</div>
+        </div>
+      </div>
+    </div>
+    <blockquote class="quote-small">
+      Wir sind überzeugt, dass gute Arbeit aus Leidenschaft, Reflexion und kritischer
+      Selbstbetrachtung entsteht. Erst wenn Kommunikation aus dieser Haltung basiert,
+      wird sie zu einem echten Austausch, der Substanz hat und bleibenden Wert schafft.
+    </blockquote>
+    <div class="placeholder-box" style="margin-top:32px;">
+      Kurzprofile / Bios der einzelnen Teammitglieder folgen hier — bitte Texte nachreichen.
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo-dark-full.png" alt="BAUCONTENT Logo">
+      <p>Fachplattform BAU &amp; Industrie — für Kommunikation &amp; Präsenz.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="best-practice.html">Best Practice</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="richtlinien.html">Redaktionelle Richtlinien</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2025–2026 BAUCONTENT. Alle Rechte vorbehalten.</span>
+    <span class="legal">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="richtlinien.html">Richtlinien</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
